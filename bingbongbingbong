@@ -1,0 +1,38 @@
+import random
+import time
+
+goons = ["Blorp", "Skid", "Zazz", "Noodle", "Captain Honk"]
+missions = [
+    "accidentally rewired the keyboard to launch confetti",
+    "tried to install Windows... on a toaster",
+    "hacked the mainframe, but only to play duck noises",
+    "swapped every desktop background with a picture of beans",
+    "ran a virus scan and found 47 memes",
+    "replaced system sounds with fart remixes",
+    "installed a second, slightly worse version of Clippy",
+]
+
+def goon_squad_report():
+    print("🧠 Goon Squad Activated\n")
+    time.sleep(1)
+    for i in range(5):
+        goon = random.choice(goons)
+        mission = random.choice(missions)
+        print(f"🌀 {goon} {mission}!")
+        time.sleep(random.uniform(0.8, 1.5))
+    print("\n✅ Operation: Keyboard Mayhem complete.")
+    print("🎉 Your computer is now 86% more chaotic.\n")
+
+def glitch_out():
+    print("🛠️ Applying goon patches...")
+    for _ in range(8):
+        print(random.choice(["BLORP", "HONK!", "BZZT", "NOODLE.exe running...", "!!!"]))
+        time.sleep(0.2)
+    print("\n💥 ERROR 404: Sanity not found.")
+
+def main():
+    goon_squad_report()
+    glitch_out()
+
+if __name__ == "__main__":
+    main()
